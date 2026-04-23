@@ -3,6 +3,8 @@ from __future__ import annotations
 from collections.abc import Awaitable, Callable, Iterator
 from typing import Any, ParamSpec, Protocol
 
+from starlette.middleware.ratelimit import RateLimitMiddleware, rate_limit
+
 P = ParamSpec("P")
 
 
